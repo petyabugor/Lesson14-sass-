@@ -1,0 +1,43 @@
+@use './variables'as *;
+
+@mixin desktop() {
+    @media (max-width: $breackpoint_xxl) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media (max-width: $breackpoint_xl) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: $breackpoint_md) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: $breackpoint_sm) {
+        @content;
+    }
+}
+
+@mixin intermediate_1170() {
+    @media (max-width: $breackpoint_intermediate_948) {
+        @content;
+    }
+}
+
+@mixin intermediate_1110() {
+    @media (max-width: $breackpoint_intermediate_1110) {
+        @content;
+    }
+}
+
+@mixin intermediate_704() {
+    @media (max-width: $breackpoint_intermediate_704) {
+        @content;
+    }
+}

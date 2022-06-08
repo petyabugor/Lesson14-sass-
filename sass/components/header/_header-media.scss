@@ -1,0 +1,15 @@
+@use '../../common'as *;
+
+@include intermediate_1110 {
+    .header {
+        &__link {
+            display: none;
+        }
+    }
+}
+
+@include laptop {
+    .header {
+        margin-bottom: 37px;
+    }
+}

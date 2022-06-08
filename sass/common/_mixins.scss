@@ -1,0 +1,20 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin button {
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 45px;
+    text-align: center;
+}
+
+@mixin fontStyles ($fontWeight, $fontSize, $lineHeight, $fontColor) {
+    font-weight: $fontWeight;
+    font-size: $fontSize;
+    line-height: $lineHeight;
+    color: $fontColor;
+}

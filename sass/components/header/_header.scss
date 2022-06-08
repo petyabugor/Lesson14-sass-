@@ -1,0 +1,47 @@
+@use '../../common'as *;
+
+.header {
+    margin-bottom: 97px;
+
+    &__container {
+        @include flex-center;
+        min-height: 95px;
+        flex-wrap: wrap;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__logo {
+        max-width: 130px;
+        margin-right: 51px;
+    }
+
+    &__link {
+        margin-right: 57px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #000000;
+    }
+
+    &__button {
+        @include button;
+        display: flex;
+        gap: 10px;
+
+        &_left {
+            padding: 1px 36px;
+            color: $black;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+        &_right {
+            padding: 1px 22px;
+            color: $white;
+            background: $btn-orange;
+        }
+    }
+}

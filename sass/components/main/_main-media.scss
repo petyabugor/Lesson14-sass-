@@ -1,0 +1,62 @@
+@use '../../common'as *;
+
+@include laptop {
+    .main {
+        margin-bottom: 57px;
+    }
+}
+
+@include tablet {
+    .main {
+        margin-bottom: 37px;
+
+        &__content {
+            flex-wrap: wrap;
+            justify-content: center;
+
+            &_left {
+                align-items: center;
+            }
+
+            &_right {
+                max-width: 359px;
+            }
+        }
+
+        &__title {
+            max-width: 100%;
+            text-align: center;
+            font-size: 45px;
+            line-height: 60px;
+            margin-bottom: 21px;
+        }
+
+        &__text1 {
+            max-width: 100%;
+            text-align: center;
+            font-size: 15px;
+            line-height: 25px;
+            margin-bottom: 25px;
+        }
+
+        &__button {
+            gap: 5px;
+            margin-bottom: 15px;
+
+            &_left {
+                font-size: 14px;
+                padding: 0 32px;
+            }
+
+            &_right {
+                font-size: 12px;
+                padding: 0 19px;
+            }
+        }
+
+        &__text2 {
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}

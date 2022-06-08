@@ -1,0 +1,42 @@
+@use '../../common'as *;
+
+.most-loved {
+    background: #DABC98;
+    padding: 83px 0 71px 0;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__left {
+        @include flex-center;
+        flex-wrap: wrap;
+        padding-right: 115px;
+        max-width: 809px;
+    }
+
+    &__left-img {
+        max-width: 176px;
+        margin-right: 57px;
+    }
+
+    &__left-text {
+        font-family: 'GraphikLCG-Semibold', sans-serif;
+        @include fontStyles(600, 35px, 50px, $black);
+        max-width: 461px;
+    }
+
+    &__right {
+        @include flex-center;
+        flex-wrap: wrap;
+        max-width: 480px;
+        padding: 30px 60px 22px 70px;
+        gap: 70px;
+        border-left: 1px solid #1D1D1B;
+    }
+
+    &__right-img {
+        min-width: 50px;
+    }
+}

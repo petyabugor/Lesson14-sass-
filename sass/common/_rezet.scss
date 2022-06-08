@@ -1,0 +1,60 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'GraphikLCG-Regular', sans-serif;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    color: #000000;
+}
+
+.wrapper {
+    overflow: hidden;
+    min-height: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+    object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+._container {
+    max-width: 1330px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+._container-narrow {
+    max-width: 1290px;
+    margin: 0 auto;
+    padding: 0 20px;
+}

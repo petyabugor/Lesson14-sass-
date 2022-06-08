@@ -1,0 +1,87 @@
+@use '../../common'as *;
+
+@include laptop {
+    .boost {
+
+        &__container {
+            padding: 54px 20px 60px 20px;
+        }
+
+        &__title {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        &__boost-item {
+            padding: 30px 30px 0 0;
+        }
+
+        &__boost-item-img {
+            margin-bottom: 40px;
+        }
+
+        &__boost-item-title {
+            font-size: 20px;
+            line-height: 26px;
+            margin-bottom: 14px;
+        }
+
+        &__boost-item-text {
+            font-size: 16px;
+            line-height: 20px;
+            margin-bottom: 15px;
+        }
+
+        &__boost-link {
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        &__boost-item-link {
+            font-size: 18px;
+        }
+    }
+}
+
+@include tablet {
+    .boost {
+
+        &__container {
+            padding: 54px 20px 30px 20px;
+        }
+
+        &__content {
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        &__boost-item {
+            max-width: 310px;
+            align-items: center;
+        }
+
+        &__boost-item-img {
+            margin-bottom: 35px;
+        }
+
+        &__boost-item-title {
+            font-size: 20px;
+            line-height: 30px;
+            margin-bottom: 14px;
+        }
+
+        &__boost-item-text {
+            text-align: center;
+            max-width: 300px;
+            font-size: 14px;
+            line-height: 24px;
+            margin-bottom: 25px;
+        }
+
+        &__boost-link {
+            font-size: 14px;
+            line-height: 24px;
+        }
+    }
+}

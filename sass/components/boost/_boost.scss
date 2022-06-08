@@ -1,0 +1,56 @@
+@use '../../common'as *;
+
+.boost {
+
+    &__container {
+        padding: 154px 20px 120px 20px;
+    }
+
+    &__title {
+        text-align: center;
+        font-family: 'GraphikLCG-Semibold', sans-serif;
+        @include fontStyles(600, 50px, 60px, $black);
+        margin-bottom: 25px;
+    }
+
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__boost-item {
+        max-width: 439px;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 30px 0 0;
+    }
+
+    &__boost-item-img {
+        height: 201px;
+        margin-bottom: 50px;
+        justify-content: flex-start;
+    }
+
+    &__boost-item-title {
+        font-family: 'GraphikLCG-Semibold', sans-serif;
+        @include fontStyles(600, 30px, 40px, $black);
+        margin-bottom: 34px;
+    }
+
+    &__boost-item-text {
+        max-width: 409px;
+        @include fontStyles(400, 20px, 30px, $black);
+        margin-bottom: 25px;
+    }
+
+    &__boost-link {
+        font-family: 'GraphikLCG-Semibold', sans-serif;
+        @include fontStyles(400, 20px, 30px, $black);
+        text-decoration: underline;
+    }
+
+    &__boost-item-link {
+        @include fontStyles(400, 20px, 30px, $black);
+        text-decoration-line: underline;
+    }
+}

@@ -1,0 +1,28 @@
+@use '../../common'as *;
+
+@include laptop {
+    .preferred {
+        margin-bottom: 50px;
+    }
+}
+
+@include tablet {
+    .preferred {
+        padding: 58px 0 54px 0;
+        margin-bottom: 50px;
+
+        &__title {
+            font-size: 40px;
+            line-height: 50px;
+            max-width: 520px;
+            margin-bottom: 30px;
+        }
+
+        &__item {
+            margin: 0 auto;
+            flex-wrap: wrap;
+            max-width: 520px;
+            gap: 20px;
+        }
+    }
+}
