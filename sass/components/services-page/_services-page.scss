@@ -1,0 +1,58 @@
+@use '../../common'as *;
+
+.services-page {
+    padding-bottom: 60px;
+
+    &__link {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 60px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: minmax(auto, 493px) minmax(auto, 493px) minmax(auto, 493px);
+        justify-items: center;
+        gap: 60px;
+    }
+
+    &__item {
+        display: inline-flex;
+        flex-direction: column;
+
+    }
+
+    &__item-img {
+        width: 92px;
+        height: 92px;
+        background: #FFFFFF;
+        border-radius: 24px;
+        padding: 14px;
+        margin-bottom: 30px;
+    }
+
+    &__item-title {
+
+        @include fontStyles(700, 22px, 27px, #24A3FF);
+        margin-bottom: 15px;
+    }
+
+    &__item-text {
+
+        @include fontStyles(400, 16px, 26px, $white);
+    }
+}
+
+.link-arrow {
+    @include button-arrow;
+}

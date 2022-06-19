@@ -1,0 +1,50 @@
+@use '../../common'as *;
+
+@include intermediate_1013 {
+    .team-slider {
+        &__wrapper {
+            max-width: 913px;
+        }
+
+        &__slide {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        &__content {
+            max-width: 648px;
+        }
+    }
+
+}
+
+@include mobile {
+    .team-slider {
+        &__wrapper {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        &__slide {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        &__content {
+            width: 100%;
+            padding: 20px 5px 0 20px;
+        }
+
+        &__title {
+            font-size: 25px;
+        }
+
+        &__navigation {
+            left: 40%;
+        }
+
+    }
+
+}

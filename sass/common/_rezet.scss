@@ -6,7 +6,7 @@
 
 html,
 body {
-    font-family: 'GraphikLCG-Regular', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     height: 100%;
     width: 100%;
     font-size: 20px;
@@ -33,8 +33,6 @@ li {
 
 img {
     max-width: 100%;
-    vertical-align: top;
-    object-fit: cover;
 }
 
 h1,
@@ -48,13 +46,43 @@ h6 {
 }
 
 ._container {
-    max-width: 1330px;
+    max-width: 1660px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 30px;
 }
 
-._container-narrow {
-    max-width: 1290px;
+._container-large {
+    max-width: 1760px;
     margin: 0 auto;
     padding: 0 20px;
+    border: 2px solid red;
+}
+
+.wrapper-blue {
+    background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+    border-radius: 0px 0px 12px 12px;
+    margin-bottom: 60px;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        bottom: -10px;
+        height: 10px;
+        background: #CACADB;
+        border-radius: 0px 0px 12px 12px;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 40px;
+        right: 40px;
+        bottom: -20px;
+        height: 10px;
+        background: #E7E7F2;
+        border-radius: 0px 0px 12px 12px;
+    }
 }

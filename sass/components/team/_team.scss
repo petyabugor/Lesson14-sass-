@@ -1,0 +1,112 @@
+@use '../../common'as *;
+
+.team-slider {
+    margin-bottom: 106px;
+
+    &__wrapper {
+        position: relative;
+        max-width: 1660px;
+        overflow: hidden;
+        height: auto;
+        padding-bottom: 70px;
+    }
+
+    &__slides {
+        width: 300%;
+        height: 100%;
+        display: flex;
+        transition: all 0.4 ease;
+    }
+
+    &__slide {
+        width: 33.4%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        transition: all 1s ease;
+    }
+
+    &__img {
+        max-width: 400px;
+        height: 298px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__content {
+        width: 1260px;
+        padding: 30px;
+    }
+
+    &__link {
+        margin-bottom: 5px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__name {
+        @include fontStyles (700, 16px, 20px, #B3B3BA);
+        margin-bottom: 6px;
+    }
+
+    &__position {
+        @include fontStyles (400, 14px, 22px, #B3B3BA);
+    }
+
+    &__navigation {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%, -50%);
+        display: flex;
+    }
+
+    &__bar {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        background-color: #24A3FF;
+        opacity: 0.2;
+        border-radius: 50%;
+        margin: 15px;
+        transition: all 0.4s ease;
+
+        &:hover {
+            opacity: 1;
+            transform: scale(1.1);
+        }
+    }
+
+    input[name="r"] {
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+#r1:checked~.r1 {
+    margin-left: 0;
+}
+
+#r2:checked~.r1 {
+    margin-left: -33.333%;
+}
+
+#r3:checked~.r1 {
+    margin-left: -66.666%;
+}
+
+.title-gradient {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

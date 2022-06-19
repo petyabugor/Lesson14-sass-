@@ -12,9 +12,31 @@
     text-align: center;
 }
 
+@mixin button-arrow {
+    display: inline-block;
+    position: relative;
+    @include fontStyles(700, 14px, 17px, #24A3FF);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 30%;
+        width: 6px;
+        height: 6px;
+        border-right: 2px solid #24A3FF;
+        border-bottom: 2px solid #24A3FF;
+        margin-left: 5px;
+        transform: rotate(-45deg);
+    }
+}
+
 @mixin fontStyles ($fontWeight, $fontSize, $lineHeight, $fontColor) {
     font-weight: $fontWeight;
     font-size: $fontSize;
     line-height: $lineHeight;
     color: $fontColor;
 }
+
+//animation

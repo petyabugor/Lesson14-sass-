@@ -1,0 +1,118 @@
+@use '../../common'as *;
+
+@include intermediate_970 {}
+
+@include intermediate_733 {
+    .footer {
+        padding: 32px 0 39px;
+
+        &__container {}
+
+        &__wrapper {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+        }
+
+        &__content {}
+
+        &__adres {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        &__adres-text {
+            @include fontStyles(400, 16px, 20px, #323264);
+        }
+
+        &__adres-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            display: inline-block;
+            @include fontStyles(700, 12px, 15px, #24A3FF);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #B3B3BA;
+                margin-right: 10px;
+            }
+        }
+
+        &__nav {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        &__link-fb {
+
+            svg {
+                fill: #24A3FF;
+                transition: 0.8s all;
+
+                &:hover {
+                    fill: #F0145A;
+                }
+            }
+        }
+
+        &__link-tel {
+            display: flex;
+            align-items: center;
+            @include fontStyles(700, 16px, 20px, #46466E);
+            text-align: right;
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #B3B3BA;
+                margin-right: 10px;
+            }
+        }
+
+        &__link-mail {
+            display: flex;
+            align-items: center;
+            @include fontStyles(700, 16px, 20px, #24A3FF);
+
+            &:hover {
+                color: #F0145A;
+            }
+
+            &::before {
+                content: '';
+                display: inline-block;
+                width: 6px;
+                height: 6px;
+                border-radius: 50%;
+                background-color: #B3B3BA;
+                margin-right: 10px;
+            }
+        }
+
+        &__copyright {}
+
+        &__copyrightext {
+            @include fontStyles(400, 16px, 20px, #B3B3BA);
+            text-align: center;
+        }
+    }
+}

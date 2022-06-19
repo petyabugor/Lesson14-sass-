@@ -1,0 +1,109 @@
+@use '../../common'as *;
+
+.footer {
+    padding: 32px 0 39px;
+
+    &__container {}
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    &__content {}
+
+    &__adres {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 30px
+    }
+
+    &__adres-text {
+        @include fontStyles(400, 16px, 20px, #323264);
+
+    }
+
+    &__adres-link {
+        display: flex;
+        align-items: center;
+        display: inline-block;
+        @include fontStyles(700, 12px, 15px, #24A3FF);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #B3B3BA;
+            margin-right: 10px;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__link-fb {
+
+        svg {
+            fill: #24A3FF;
+            transition: 0.8s all;
+
+            &:hover {
+                fill: #F0145A;
+            }
+        }
+    }
+
+    &__link-tel {
+        display: flex;
+        align-items: center;
+        @include fontStyles(700, 16px, 20px, #46466E);
+        text-align: right;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #B3B3BA;
+            margin-right: 10px;
+        }
+    }
+
+    &__link-mail {
+        display: flex;
+        align-items: center;
+        @include fontStyles(700, 16px, 20px, #24A3FF);
+
+        &:hover {
+            color: #F0145A;
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #B3B3BA;
+            margin-right: 10px;
+        }
+    }
+
+    &__copyright {}
+
+    &__copyrightext {
+        @include fontStyles(400, 16px, 20px, #B3B3BA);
+        text-align: right;
+    }
+}

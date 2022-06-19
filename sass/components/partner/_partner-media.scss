@@ -1,0 +1,91 @@
+@use '../../common'as *;
+
+@include intermediate_1318 {
+    .partner {
+
+        &__items {
+            grid-template-columns: repeat(4, minmax(250px, 400px));
+        }
+
+        &__item {
+            padding: 30px 70px;
+        }
+    }
+
+    .partner-item-hillel {
+        border-radius: 0 0 0 0;
+    }
+
+    .partner-item-3dlook {
+        border-radius: 0 0 0 0;
+    }
+}
+
+@include intermediate_970 {
+    .partner {
+
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        &__item {
+            padding: 30px 70px;
+
+            img {
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+    }
+
+    .partner-item-hillel {
+        border-radius: 0 0 0 0;
+    }
+
+    .partner-item-3dlook {
+        border-radius: 0 0 0 0;
+    }
+}
+
+
+@include mobile {
+    .partner {
+
+        &__items {
+            grid-template-columns: 100%;
+        }
+
+        &__item {
+            padding: 30px 100px;
+
+            img {
+                object-fit: contain;
+                height: 100%;
+            }
+        }
+    }
+
+    .partner-item-clickky {
+        display: none;
+    }
+
+    .partner-item-eco-leasing {
+        display: none;
+    }
+
+    .partner-item-ingratek {
+        display: none;
+    }
+
+    .partner-item-city-par {
+        display: none;
+    }
+
+    .partner-item-artprint {
+        display: none;
+    }
+
+    .partner-item-ultimatecard {
+        display: none;
+    }
+}

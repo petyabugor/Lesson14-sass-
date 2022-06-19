@@ -1,62 +1,95 @@
 @use '../../common'as *;
 
-@include laptop {
+@include intermediate_1013 {
     .main {
-        margin-bottom: 57px;
+        margin-top: -217px;
+    }
+}
+
+@include intermediate_970 {
+    .main {
+        margin-top: -217px;
+
+        &__content {
+            flex-wrap: wrap;
+        }
+
+        &__content-items {
+            overflow-x: auto;
+            max-width: 200%;
+            padding-right: 0px;
+            padding-bottom: 60px;
+            flex-direction: row;
+            gap: 30px;
+            border-bottom: 4px solid rgba(255, 255, 255, 0.3);
+            border-right: 0px;
+            margin-bottom: 30px;
+
+            &::-webkit-scrollbar {
+                width: 0;
+            }
+        }
+
+
+        &__description {
+            padding-left: 0px;
+        }
     }
 }
 
 @include tablet {
+
     .main {
-        margin-bottom: 37px;
-
-        &__content {
-            flex-wrap: wrap;
-            justify-content: center;
-
-            &_left {
-                align-items: center;
-            }
-
-            &_right {
-                max-width: 359px;
-            }
+        &__logo-wrapper {
+            margin-left: -30px;
         }
 
-        &__title {
+
+    }
+}
+
+
+@include intermediate_600 {
+
+
+    .main {
+        &__logo-wrapper {
+            margin-left: -30px;
+            margin-right: -30px;
+
+        }
+
+        &__logo {
             max-width: 100%;
-            text-align: center;
-            font-size: 45px;
-            line-height: 60px;
-            margin-bottom: 21px;
+            margin: auto;
         }
 
-        &__text1 {
-            max-width: 100%;
-            text-align: center;
-            font-size: 15px;
-            line-height: 25px;
-            margin-bottom: 25px;
+        &__logo-tile {
+            max-width: 315px;
+            top: 55%;
+
         }
 
-        &__button {
-            gap: 5px;
-            margin-bottom: 15px;
+        &__arrow {
+            position: absolute;
+            left: 50%;
+            bottom: 0%;
+            transform: translate(-50%, -50%);
+            animation: arrowDown 2s infinite;
 
-            &_left {
-                font-size: 14px;
-                padding: 0 32px;
+            @keyframes arrowDown {
+                0% {
+                    bottom: -20px;
+                }
+
+                50% {
+                    bottom: 0;
+                }
+
+                100% {
+                    bottom: -20px;
+                }
             }
-
-            &_right {
-                font-size: 12px;
-                padding: 0 19px;
-            }
-        }
-
-        &__text2 {
-            font-size: 15px;
-            line-height: 25px;
         }
     }
 }

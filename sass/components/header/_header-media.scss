@@ -1,15 +1,101 @@
 @use '../../common'as *;
 
-@include intermediate_1110 {
-    .header {
-        &__link {
-            display: none;
+@include laptop {
+    .offer {
+        &__control-item {
+            align-items: center;
+            gap: 20px;
+
+            &:not(last-child) {
+                margin-bottom: 50px;
+            }
+
+            &:last-child {
+                margin-bottom: 80px;
+            }
+        }
+
+        &__control-content {
+            max-width: 557px;
+            padding: 0px;
+        }
+
+        &__control-img {
+            max-width: 432px;
         }
     }
 }
 
-@include laptop {
-    .header {
-        margin-bottom: 37px;
+@include tablet {
+    .offer {
+        &__control-item {
+
+            &:not(last-child) {
+                margin-bottom: 10px;
+            }
+
+            &:last-child {
+                margin-bottom: 25px;
+            }
+        }
+
+        &__control-content {
+            max-width: 257px;
+            padding: 25px 0;
+        }
+
+        &__control-title {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 30px;
+        }
+
+        &__control-text {
+            max-width: 257px;
+            font-size: 15px;
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+
+        &__control-link {
+            font-size: 15px;
+            line-height: 20px;
+        }
+
+        &__control-img {
+            max-width: 300px;
+        }
+    }
+}
+
+@include mobile {
+    .offer {
+
+        &__control-item {
+            flex-wrap: wrap;
+            flex: 0 1 100%;
+            justify-content: center;
+            max-width: 100%;
+
+            &:nth-child(even) {
+                flex-wrap: wrap-reverse;
+            }
+        }
+
+        &__control-content {
+            max-width: 100%;
+            text-align: center;
+        }
+
+        &__control-title {
+            max-width: 100%;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        &__control-text {
+            max-width: 100%;
+            margin-bottom: 10px;
+        }
     }
 }

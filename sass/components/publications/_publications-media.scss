@@ -1,0 +1,24 @@
+@use '../../common'as *;
+
+@include intermediate_970 {
+    .publication {
+        &__items {
+            grid-template-columns: repeat(2, minmax(250px, 1fr));
+            grid-template-areas:
+                "smal1 smal2"
+                "big big";
+        }
+    }
+}
+
+@include mobile {
+    .publication {
+        &__items {
+            grid-template-columns: minmax(250px, 1fr);
+            grid-template-areas:
+                "smal1"
+                "smal2"
+                "big";
+        }
+    }
+}

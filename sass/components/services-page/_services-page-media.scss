@@ -1,0 +1,22 @@
+@use '../../common'as *;
+
+
+
+@include tablet {
+    .services-page {
+
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(auto, 294px));
+        }
+    }
+}
+
+@include intermediate_710 {
+    .services-page {
+
+        &__items {
+            grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+            gap: 30px;
+        }
+    }
+}

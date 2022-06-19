@@ -1,0 +1,79 @@
+@use '../../common'as *;
+
+.publication {
+    padding: 30px 0;
+
+    &__container {}
+
+    &__wrapper {}
+
+    &__link {
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(250px, 513px));
+        grid-template-areas:
+            "smal1 smal2 big";
+        gap: 30px;
+    }
+
+    &__item {
+        display: flex;
+
+        &_smal1 {
+            grid-area: smal1;
+        }
+
+        &_smal2 {
+            grid-area: smal2;
+        }
+
+        &_big {
+            grid-area: big;
+        }
+    }
+
+    &__item-content {
+        padding: 0 30px;
+    }
+
+    &__item-img {
+        margin-bottom: 30px;
+
+        position: relative;
+        min-height: 200px;
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    &__item-link {
+        @include fontStyles(700, 16px, 20px, #24A3FF);
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+
+    &__item-data {
+        @include fontStyles(700, 12px, 15px, #B3B3BA);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 34px;
+    }
+
+    &__item-text {
+        @include fontStyles(400, 14px, 22px, $black);
+
+    }
+}
