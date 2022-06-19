@@ -656,6 +656,9 @@ h6 {
   }
 }
 @media (max-width: 600px) {
+  .main {
+    margin-top: -171px;
+  }
   .main__logo-wrapper {
     margin-left: -30px;
     margin-right: -30px;
@@ -666,7 +669,7 @@ h6 {
   }
   .main__logo-tile {
     max-width: 315px;
-    top: 55%;
+    top: 60%;
   }
   .main__arrow {
     position: absolute;
