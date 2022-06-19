@@ -48,6 +48,15 @@
         transform: translate(-50%, -50%);
         animation: arrowDown 2s infinite;
 
+        svg {
+            stroke: #fff;
+            transition: all 0.7s ease;
+
+            &:hover {
+                stroke: #F0145A;
+            }
+        }
+
         @keyframes arrowDown {
             0% {
                 bottom: 20px;

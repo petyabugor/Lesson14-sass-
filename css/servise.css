@@ -12,6 +12,7 @@ body {
   width: 100%;
   font-size: 20px;
   color: #000000;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -160,78 +161,4 @@ h6 {
   content: "\e909";
   margin-left: -0.8720703125em;
   color: rgb(240, 20, 90);
-}
-
-@media (max-width: 1024px) {
-  .offer__control-item {
-    align-items: center;
-    gap: 20px;
-  }
-  .offer__control-item:not(last-child) {
-    margin-bottom: 50px;
-  }
-  .offer__control-item:last-child {
-    margin-bottom: 80px;
-  }
-  .offer__control-content {
-    max-width: 557px;
-    padding: 0px;
-  }
-  .offer__control-img {
-    max-width: 432px;
-  }
-}
-@media (max-width: 767px) {
-  .offer__control-item:not(last-child) {
-    margin-bottom: 10px;
-  }
-  .offer__control-item:last-child {
-    margin-bottom: 25px;
-  }
-  .offer__control-content {
-    max-width: 257px;
-    padding: 25px 0;
-  }
-  .offer__control-title {
-    font-size: 30px;
-    line-height: 40px;
-    margin-bottom: 30px;
-  }
-  .offer__control-text {
-    max-width: 257px;
-    font-size: 15px;
-    line-height: 20px;
-    margin-bottom: 30px;
-  }
-  .offer__control-link {
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .offer__control-img {
-    max-width: 300px;
-  }
-}
-@media (max-width: 575px) {
-  .offer__control-item {
-    flex-wrap: wrap;
-    flex: 0 1 100%;
-    justify-content: center;
-    max-width: 100%;
-  }
-  .offer__control-item:nth-child(even) {
-    flex-wrap: wrap-reverse;
-  }
-  .offer__control-content {
-    max-width: 100%;
-    text-align: center;
-  }
-  .offer__control-title {
-    max-width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
-  }
-  .offer__control-text {
-    max-width: 100%;
-    margin-bottom: 10px;
-  }
 }/*# sourceMappingURL=servise.css.map */
