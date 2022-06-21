@@ -15,6 +15,12 @@
             "big smal2";
     }
 
+    &__logo-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+    }
+
     &__logo {
         grid-area: big;
     }
@@ -138,7 +144,9 @@
 
 
     &__label {
-        display: block;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 7px;
         position: absolute;
         top: 0;
         left: 0;
@@ -146,6 +154,13 @@
         height: 100%;
         cursor: pointer;
         z-index: 2;
+        padding-bottom: 10px;
+
+        img {
+            object-fit: cover;
+            max-width: 100%;
+            height: 100%;
+        }
     }
 
     &__line-wrapper {
@@ -157,8 +172,6 @@
 
     &__line {
         transition: 0.8s all;
-
-
 
         &_first {
             position: absolute;
@@ -275,4 +288,26 @@
 
 .highlighted3 {
     color: #F0145A;
+}
+
+.page-name-burger {
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+    @include fontStyles(400, 24px, 34px, $white);
+
+    &::before {
+        content: url(../img/icon/Slash.png);
+    }
+}
+
+.page-name {
+    display: flex;
+    align-items: flex-start;
+
+    @include fontStyles(400, 36px, 44px, $white);
+
+    &::before {
+        content: url(../img/icon/Slash.png);
+    }
 }

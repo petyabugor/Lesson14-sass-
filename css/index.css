@@ -47,10 +47,22 @@ h6 {
   font-weight: inherit;
 }
 
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
 ._container {
   max-width: 1660px;
   margin: 0 auto;
   padding: 0 30px;
+}
+
+._container-narrow {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 ._container-large {
@@ -175,6 +187,11 @@ h6 {
   align-items: center;
   grid-template-areas: "big smal1" "big smal2";
 }
+.header__logo-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
 .header__logo {
   grid-area: big;
 }
@@ -292,7 +309,9 @@ h6 {
   margin-right: 10px;
 }
 .burger__label {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
   position: absolute;
   top: 0;
   left: 0;
@@ -300,6 +319,13 @@ h6 {
   height: 100%;
   cursor: pointer;
   z-index: 2;
+  padding-bottom: 10px;
+}
+.burger__label img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-width: 100%;
+  height: 100%;
 }
 .burger__line-wrapper:hover {
   background: #E6E6F0;
@@ -411,6 +437,31 @@ h6 {
   color: #F0145A;
 }
 
+.page-name-burger {
+  display: flex;
+  padding-right: 50px;
+  align-items: center;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 34px;
+  color: #ffffff;
+}
+.page-name-burger::before {
+  content: url(../img/icon/Slash.png);
+}
+
+.page-name {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+}
+.page-name::before {
+  content: url(../img/icon/Slash.png);
+}
+
 @media (max-width: 1013px) {
   .header__wrapper {
     grid-template-columns: minmax(auto, 100%);
@@ -486,12 +537,22 @@ h6 {
   }
 
   .burger {
-    display: block;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .page-name {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .page-name-burger {
+    display: none;
   }
 }
 .main {
   margin-top: -146px;
-  margin-bottom: 60px;
 }
 .main__wrapper {
   margin: auto;
@@ -704,6 +765,7 @@ h6 {
 }
 .services-page {
   padding-bottom: 60px;
+  margin-top: 60px;
 }
 .services-page__link {
   margin-bottom: 10px;
@@ -742,6 +804,10 @@ h6 {
   line-height: 27px;
   color: #24A3FF;
   margin-bottom: 15px;
+  transition: 0.3s all;
+}
+.services-page__item-title:hover {
+  color: #F0145A;
 }
 .services-page__item-text {
   font-weight: 400;
@@ -781,6 +847,11 @@ h6 {
   .services-page__items {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
     gap: 30px;
+  }
+}
+@media (max-width: 600px) {
+  .margin-top {
+    margin-top: 200px;
   }
 }
 .team-slider {

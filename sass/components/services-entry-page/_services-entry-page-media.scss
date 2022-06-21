@@ -1,0 +1,39 @@
+@use '../../common'as *;
+
+@include intermediate_1013 {
+    .form-popup {
+        top: 63%;
+    }
+}
+
+@include intermediate_733 {
+    .form-popup-bg {
+        z-index: 99;
+    }
+
+    .form-popup {
+        z-index: 999;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transform: translate(0%, 0%);
+        border-radius: 0px;
+    }
+}
+
+@include intermediate_600 {
+    .services-entry-page {
+        &__content-text {
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+    }
+}
+
+@include intermediate_600 {
+    .margin-top {
+        margin-top: 180px;
+    }
+}

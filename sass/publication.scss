@@ -1,4 +1,10 @@
 //common
 @use './common';
 //components
-@use './components/header';
+@use './components/header-blue';
+@use './components/main';
+@use './components/services-page';
+@use './components/team';
+@use './components/partner';
+@use './components/publications';
+@use './components/footer';

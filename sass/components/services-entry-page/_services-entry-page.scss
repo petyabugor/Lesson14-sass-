@@ -1,0 +1,221 @@
+@use '../../common'as *;
+
+.services-entry-page {
+    padding: 60px 0;
+
+    &__container {}
+
+    &__wrapper {}
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        margin-bottom: 60px;
+    }
+
+    &__item-img {
+        display: inline-block;
+        background: #FFFFFF;
+        border-radius: 24px;
+        padding: 14px;
+    }
+
+    &__item-title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__item-text {
+        @include fontStyles(400, 19px, 30px, $white);
+        text-align: center;
+    }
+
+    &__button {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__btn {
+        display: inline-block;
+        @include fontStyles(700, 16px, 20px, $white);
+        flex-shrink: 0;
+        width: 208px;
+        height: 56px;
+        padding: 18px 30px;
+        text-align: center;
+        background: #24A3FF;
+        box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+        border-radius: 12px;
+        cursor: pointer;
+    }
+
+
+
+    &__content {
+        padding-top: 34px;
+        border-top: 4px solid rgba(255, 255, 255, 0.5);
+    }
+
+
+
+    &__content-title {
+        @include fontStyles(700, 22px, 27px, $white);
+        margin-bottom: 30px;
+    }
+
+    &__content-text {
+        display: flex;
+        justify-content: space-between;
+        gap: 74px;
+    }
+
+    &__content-left {
+        max-width: 650px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__point {
+        @include fontStyles(400, 18px, 26px, $white);
+
+        &::before {
+            content: '';
+            display: inline-block;
+            text-align: left;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #F0145A;
+            margin-right: 9px;
+        }
+
+    }
+
+    &__content-right {
+        max-width: 650px;
+    }
+}
+
+.form-popup-bg {
+    display: none;
+    position: relative;
+    z-index: 9;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(50, 50, 100, 0.7);
+}
+
+.form-popup {
+    z-index: 999;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 650px;
+    height: 612px;
+    padding: 30px 60px 30px 30px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #F5F5FA;
+    box-shadow: 0px 15px 80px rgba(40, 40, 86, 0.5);
+    border-radius: 12px;
+}
+
+.form-popup-title {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.form-popup-input {
+    width: 100%;
+    flex-shrink: 0;
+    background-color: transparent;
+    padding: 15px 0 15px 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #B3B3BA;
+}
+
+.form-popup-textarea {
+    padding: 15px 0 15px 15px;
+    width: 100%;
+    min-height: 130px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #B3B3BA;
+    resize: none;
+}
+
+.form-popup-btn {
+    padding: 18px 30px;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    @include fontStyles(700, 16px, 20px, $white);
+    text-align: center;
+    border: none;
+}
+
+::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #B3B3BA;
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #B3B3BA;
+}
+
+:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #B3B3BA;
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: #B3B3BA;
+}
+
+#modal {
+    display: none;
+}
+
+#modal:checked~.form-popup-bg {
+    position: fixed;
+    display: block;
+}
+
+
+.close {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    transform: rotate(45deg);
+    font-size: 50px;
+    cursor: pointer;
+    color: rgba(236, 111, 93, 1);
+}
