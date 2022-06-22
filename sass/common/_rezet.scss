@@ -28,6 +28,7 @@ a {
 }
 
 ul,
+ol,
 li {
     list-style: none;
 }
@@ -60,6 +61,12 @@ textarea {
 
 ._container-narrow {
     max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+._container-narrow2 {
+    max-width: 1120px;
     margin: 0 auto;
     padding: 0 20px;
 }

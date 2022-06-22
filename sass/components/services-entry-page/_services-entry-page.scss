@@ -219,3 +219,17 @@
     cursor: pointer;
     color: rgba(236, 111, 93, 1);
 }
+
+.link-arrow {
+    @include button-arrow;
+}
+
+.title-gradient {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 46px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

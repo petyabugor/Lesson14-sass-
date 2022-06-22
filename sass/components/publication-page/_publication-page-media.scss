@@ -1,0 +1,29 @@
+@use '../../common'as *;
+
+
+@include intermediate_1013 {
+    .publication {
+        &__items {
+            grid-template-columns: repeat(2, minmax(250px, 513px));
+        }
+    }
+}
+
+@include intermediate_710 {
+    .publication {
+        &__items {
+            display: grid;
+            grid-template-columns: minmax(250px, 1fr);
+            gap: 30px;
+        }
+    }
+}
+
+
+
+
+@include intermediate_600 {
+    .margin-top {
+        margin-top: 200px;
+    }
+}

@@ -1,0 +1,130 @@
+@use '../../common'as *;
+
+.publication-entry {
+    margin-top: 60px;
+    margin-bottom: 60px;
+
+    &__container {}
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__header {
+        padding-bottom: 30px;
+        border-bottom: 4px solid #E6E6F0;
+    }
+
+    &__header-img {
+        margin-bottom: 30px;
+
+        img {
+            border-radius: 12px;
+        }
+    }
+
+    &__header-title {
+        margin-bottom: 15px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: #323264;
+    }
+
+    &__header-text {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #B3B3BA;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-bottom: 30px;
+        border-bottom: 4px solid #E6E6F0;
+    }
+
+    &__main-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    &__main-title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__main-list {
+        counter-reset: ol-numbers;
+
+        li {
+            position: relative;
+            padding-left: 40px;
+
+            &::before {
+                counter-increment: ol-numbers;
+                content: counter(ol-numbers) '.';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 30px;
+                height: 26px;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 26px;
+                text-align: right;
+                color: #F0145A;
+            }
+        }
+    }
+
+    &__main-title4 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+        color: #46466E;
+
+    }
+
+    &__main-img {}
+
+    &__main-img-text {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #B3B3BA;
+    }
+
+    &__icon {
+        display: flex;
+        gap: 19px;
+
+        svg {
+            cursor: pointer;
+        }
+    }
+
+    &__icon-link-fb {
+        svg {
+            fill: #435695;
+
+            &:hover {
+                fill: #4f619b;
+            }
+        }
+    }
+}
