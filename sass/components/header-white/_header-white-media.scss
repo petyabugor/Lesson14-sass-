@@ -75,7 +75,7 @@
                 @include flex-center;
                 gap: 6px;
 
-                @include fontStyles(700, 16px, 20px, $white);
+                @include fontStyles(700, 16px, 20px, #B3B3BA);
                 text-align: right;
 
                 &::before {
