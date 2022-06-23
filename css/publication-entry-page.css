@@ -66,6 +66,12 @@ textarea {
   padding: 0 20px;
 }
 
+._container-narrow3 {
+  max-width: 1340px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 ._container-narrow2 {
   max-width: 1120px;
   margin: 0 auto;
@@ -243,7 +249,7 @@ textarea {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #B3B3BA;
 }
 .header__link_tel {
   display: flex;
@@ -262,7 +268,7 @@ textarea {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #B3B3BA;
 }
 .header__link_fb {
   display: flex;
@@ -283,7 +289,7 @@ textarea {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: #ffffff;
+  background-color: #B3B3BA;
 }
 .header__nav-page {
   grid-area: smal2;
@@ -553,7 +559,7 @@ textarea {
     display: none;
   }
 }
-@media (max-width: 380px) {
+@media (max-width: 390px) {
   .page-name-burger {
     display: none;
   }

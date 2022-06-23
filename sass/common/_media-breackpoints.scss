@@ -78,8 +78,8 @@
     }
 }
 
-@mixin intermediate_380() {
-    @media (max-width: $breackpoint_intermediate_380) {
+@mixin intermediate_390() {
+    @media (max-width: $breackpoint_intermediate_390) {
         @content;
     }
 }
