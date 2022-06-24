@@ -846,7 +846,10 @@ textarea {
     padding: 25px 15px;
   }
   .about-slider__navigation {
-    left: 25%;
+    left: 20%;
+  }
+  .about-slider__bar {
+    margin: 10px;
   }
 
   .r2 {
