@@ -1,0 +1,46 @@
+@use '../../common'as *;
+
+
+@include intermediate_1110 {
+    .team-entry {
+
+        &__wrapper {
+            grid-template-columns: minmax(230px, 400px) minmax(230px, 900px);
+            align-items: center;
+            row-gap: 60px;
+            grid-template-areas:
+                "big smal1"
+                "smal2 smal2";
+        }
+
+        &__data-link {
+            flex-direction: column;
+        }
+    }
+}
+
+
+
+@include intermediate_600 {
+    .team-entry {
+
+        &__wrapper {
+            row-gap: 0px;
+            grid-template-columns: minmax(230px, 1fr);
+            align-items: center;
+            justify-content: center;
+            grid-template-areas:
+                "big "
+                "smal1"
+                "smal2";
+        }
+
+        &__img {
+            margin-bottom: 30px;
+        }
+    }
+
+    .margin-top {
+        margin-top: 200px;
+    }
+}
