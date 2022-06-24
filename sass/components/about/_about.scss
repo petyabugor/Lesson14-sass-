@@ -1,0 +1,214 @@
+@use '../../common'as *;
+
+.about-header {
+    margin-top: 60px;
+    padding-bottom: 60px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    &__item-content {
+        max-width: 942px;
+        display: flex;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    &__item-right {
+        padding-left: 30px;
+        max-width: 388px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        border-left: 4px solid #E6E6F0;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__item-icon {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    &__item-numb {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    &__item-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+    }
+}
+
+.about-img {
+    position: relative;
+    width: 100%;
+
+    &__title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 105px;
+        text-align: center;
+        letter-spacing: 63px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        opacity: 0.8;
+        text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+    }
+}
+
+.about-footer {
+    padding: 60px 0;
+
+    &__wrapper {
+        display: flex;
+        gap: 60px;
+    }
+
+    &__description {
+        max-width: 938px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &__text {
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+    }
+
+    &__right {
+        max-width: 362px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+}
+
+.about-slider {
+    padding: 30px 0;
+
+    &__wrapper {
+        position: relative;
+        padding-bottom: 70px;
+    }
+
+    &__slides {
+        display: grid;
+        gap: 40px;
+        grid-template-columns: repeat(4, minmax(300px, 370px));
+        justify-content: center;
+
+        :nth-child(4) {
+            display: none;
+        }
+
+        :nth-child(5) {
+            display: none;
+        }
+
+        :nth-child(6) {
+            display: none;
+        }
+    }
+
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 110px;
+        padding: 25px 80px;
+    }
+
+    &__img {
+        img {
+            object-fit: cover;
+            height: auto;
+            max-width: 100%;
+        }
+    }
+
+
+    &__navigation {
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%, -50%);
+        display: flex;
+    }
+
+    &__bar {
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+        background-color: #24A3FF;
+        opacity: 0.2;
+        border-radius: 50%;
+        margin: 15px;
+        transition: all 0.4s ease;
+
+
+        &:hover {
+            opacity: 0.6;
+            transform: scale(1.1);
+        }
+
+    }
+
+    input[name="r"] {
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+.bar-checked {
+    background-color: #24A3FF;
+    opacity: 1;
+}
