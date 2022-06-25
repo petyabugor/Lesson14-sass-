@@ -693,6 +693,13 @@ textarea {
 }
 .publication__title {
   margin-bottom: 30px;
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 .publication__items {
   display: grid;
@@ -751,16 +758,6 @@ textarea {
   font-size: 14px;
   line-height: 22px;
   color: #000000;
-}
-
-.title-gradient {
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 46px;
-  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
 }
 
 .link-arrow {

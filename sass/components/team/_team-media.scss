@@ -19,6 +19,15 @@
 
 }
 
+@include intermediate_600 {
+    .team-slider {
+        &__title {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+}
+
 @include mobile {
     .team-slider {
         &__wrapper {

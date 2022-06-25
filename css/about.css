@@ -688,6 +688,16 @@ textarea {
   position: relative;
   padding-bottom: 70px;
 }
+.about-slider__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-bottom: 30px;
+}
 .about-slider__slides {
   display: grid;
   gap: 40px;
